@@ -1,0 +1,40 @@
+# 本地秘密：忽略规则不会阻止代理读取文件。
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# 本机代理配置与临时记录
+.codex/config.local.toml
+.claude/settings.local.json
+CLAUDE.local.md
+.local/
+
+# 系统与编辑器产物
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+
+# 常见依赖、缓存与构建产物；按项目调整。
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.next/
+.nuxt/
+coverage/
+dist/
+build/
+*.log
+
+# 保留依赖锁文件、迁移和共享配置，不整体忽略 .github/ 或 .codex/。
